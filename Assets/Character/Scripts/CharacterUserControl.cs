@@ -20,5 +20,10 @@ public class CharacterUserControl : MonoBehaviour
         {
             GrowthManager.Instance.Expunge();
         }
+
+        if (Input.GetButtonDown("Cancel"))
+        {
+            GameController.Instance.Pause();
+        }
     }
 }
