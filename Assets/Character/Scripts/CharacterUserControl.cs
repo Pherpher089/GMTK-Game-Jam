@@ -16,5 +16,9 @@ public class CharacterUserControl : MonoBehaviour
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
         CharacterController.Instance.MoveTopDown(h, v);
+        if (Input.GetButtonDown("Jump"))
+        {
+            GrowthManager.Instance.Expunge();
+        }
     }
 }
