@@ -226,6 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1878815980787705852}
   - component: {fileID: 7805497469429274014}
+  - component: {fileID: 514458074037287984}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -263,8 +264,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c62897e1489a0e43b9f5c4bbb92326c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseScreen: {fileID: 0}
-  DeathScreen: {fileID: 0}
+  PauseScreen: {fileID: 5027255014335192760}
+  DeathScreen: {fileID: 6177918568082845496}
+--- !u!81 &514458074037287984
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210386753263517205}
+  m_Enabled: 1
 --- !u!1 &1710964242873075460
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,7 +679,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8263063540683948461}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7805497469429274014}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnRetry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4643660792484633713
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,7 +813,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3188341353663657807}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7805497469429274014}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnQuit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5027255014335192760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,7 +1049,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4668741839929106355}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7805497469429274014}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnQuit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5574480942821160056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,7 +1183,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7514668970333605616}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7805497469429274014}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5902703868241681447
 GameObject:
   m_ObjectHideFlags: 0
