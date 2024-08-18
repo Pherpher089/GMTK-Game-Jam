@@ -3,12 +3,15 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     [HideInInspector] public static CharacterController Instance;
-    private Animator m_Animator;
+    [HideInInspector] public Animator m_Animator;
     [Range(1, 10)] public float m_SpeedModifier = 1;
+
+    Rigidbody rb;
     void Awake()
     {
         Instance = this;
         m_Animator = transform.GetChild(0).GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
     }
 
     public void MoveTopDown(float x, float y)
@@ -44,6 +47,6 @@ public class CharacterController : MonoBehaviour
         m_Animator.SetFloat("Vertical", y);
 
 
-        transform.Translate(new Vector3(x, 0, y) * Time.deltaTime * m_SpeedModifier);
+        rb.velocity = new Vector3(x, rb.velocity.y / m_SpeedModifier, y) * m_SpeedModifier;
     }
 }
