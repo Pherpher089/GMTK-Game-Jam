@@ -33,17 +33,20 @@ public class CameraController : MonoBehaviour
         ChangePerspectives(m_IsTopDown);
     }
 
-    void ChangePerspectives(bool isTopDown)
+    public void ChangePerspectives(bool isTopDown)
     {
         if (isTopDown)
         {
             m_MainCamera.transform.localPosition = Vector3.Lerp(m_MainCamera.transform.localPosition, m_CameraPositionsAndRotations[0], Time.deltaTime * m_CameraSmooth);
             m_MainCamera.transform.rotation = Quaternion.Euler(Vector3.Lerp(m_MainCamera.transform.rotation.eulerAngles, m_CameraPositionsAndRotations[1], Time.deltaTime * m_CameraSmooth));
+            //CharacterController.Instance.transform.rotation = Quaternion.Euler(90, 0, 0);
         }
         else
         {
             m_MainCamera.transform.localPosition = Vector3.Lerp(m_MainCamera.transform.localPosition, m_CameraPositionsAndRotations[2], Time.deltaTime * m_CameraSmooth);
             m_MainCamera.transform.rotation = Quaternion.Euler(Vector3.Lerp(m_MainCamera.transform.rotation.eulerAngles, m_CameraPositionsAndRotations[3], Time.deltaTime * m_CameraSmooth));
+            //CharacterController.Instance.transform.rotation = Quaternion.Euler(30, 0, 0);
+
         }
     }
 }
