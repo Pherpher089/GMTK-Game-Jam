@@ -80,6 +80,11 @@ public class GrowthManager : MonoBehaviour
         if (collision.collider.TryGetComponent<Food>(out var food) && m_GrowthLevel >= food.m_MinGrowthValue)
         {
             m_GrowthLevel += food.m_GrowthValue;
+            if (food.m_GrowthValue < 0)
+            {
+                m_ParticleSystem.Play();
+                AudioManager.Instance.PlayExpunge();
+            }
             UpdateGrowth();
             AudioManager.Instance.PlayPickup();
             Destroy(collision.collider.gameObject);
