@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1153774449534284438}
   - component: {fileID: 1153774449534284433}
+  - component: {fileID: 434928597653727000}
   - component: {fileID: 14537178}
   - component: {fileID: 1153774449534284432}
   - component: {fileID: 1153774449534284435}
@@ -40,7 +41,7 @@ Transform:
   m_Children:
   - {fileID: 1153774450028695148}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1153774449534284433
 BoxCollider:
@@ -62,6 +63,29 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.25, y: 0.1, z: 0.25}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &434928597653727000
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153774449534284434}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 1.042
+  m_Height: 2.084
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &14537178
 Rigidbody:
@@ -115,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Animator: {fileID: 0}
-  m_SpeedModifier: 5
+  m_SpeedModifier: []
 --- !u!114 &14537173
 MonoBehaviour:
   m_ObjectHideFlags: 0

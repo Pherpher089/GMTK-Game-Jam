@@ -8,6 +8,7 @@ public class GrowthManager : MonoBehaviour
     public static GrowthManager Instance;
     Transform m_CharacterSpriteTransform;
     BoxCollider m_BoxCollider;
+    CapsuleCollider m_CapsuleCollider;
     public float m_GrowthLevel = .2f;
     public float[] m_GrowthSteps;
     ParticleSystem m_ParticleSystem;
@@ -20,6 +21,7 @@ public class GrowthManager : MonoBehaviour
         m_CharacterSpriteTransform = transform.GetChild(0).transform;
         m_BoxCollider = transform.GetComponent<BoxCollider>();
         m_ParticleSystem = GetComponent<ParticleSystem>();
+        m_CapsuleCollider = GetComponent<CapsuleCollider>();
     }
 
     public void Expunge()
@@ -45,6 +47,8 @@ public class GrowthManager : MonoBehaviour
             currentSate = 0;
             CharacterController.Instance.m_Animator.SetInteger("Level", 0);
             CameraController.Instance.m_IsTopDown = true;
+            m_BoxCollider.enabled = true;
+            m_CapsuleCollider.enabled = false;
             m_BoxCollider.size = new Vector3(.25f, .1f, 0.25f);
             m_CharacterSpriteTransform.transform.localRotation = Quaternion.Euler(new Vector3(90, 0, 0));
             m_CharacterSpriteTransform.transform.localPosition = new Vector3(0, 0, 0);
@@ -53,6 +57,8 @@ public class GrowthManager : MonoBehaviour
         {
             currentSate = 1;
             CharacterController.Instance.m_Animator.SetInteger("Level", 1);
+            m_BoxCollider.enabled = true;
+            m_CapsuleCollider.enabled = false;
             m_BoxCollider.size = new Vector3(.25f, 0.1f, 0.5f);
             CameraController.Instance.m_IsTopDown = true;
             m_CharacterSpriteTransform.transform.localRotation = Quaternion.Euler(new Vector3(90, 0, 0));
@@ -63,20 +69,22 @@ public class GrowthManager : MonoBehaviour
         {
             currentSate = 2;
             CharacterController.Instance.m_Animator.SetInteger("Level", 2);
-            m_BoxCollider.size = new Vector3(.25f, 0.5f, 0.125f);
+            m_BoxCollider.enabled = false;
+            m_CapsuleCollider.enabled = true;
             CameraController.Instance.m_IsTopDown = false;
             m_CharacterSpriteTransform.transform.localRotation = Quaternion.Euler(new Vector3(30, 0, 0));
-            m_CharacterSpriteTransform.transform.localPosition = new Vector3(0, 0.09f, 0);
+            m_CharacterSpriteTransform.transform.localPosition = new Vector3(0, 0.05f, 0);
             AudioManager.Instance.PlayChangeState(1);
         }
         else if (m_GrowthLevel > m_GrowthSteps[2] && currentSate != 3)
         {
             currentSate = 3;
             CharacterController.Instance.m_Animator.SetInteger("Level", 3);
-            m_BoxCollider.size = new Vector3(.25f, 0.5f, 0.125f);
+            m_BoxCollider.enabled = false;
+            m_CapsuleCollider.enabled = true;
             CameraController.Instance.m_IsTopDown = false;
             m_CharacterSpriteTransform.transform.localRotation = Quaternion.Euler(new Vector3(30, 0, 0));
-            m_CharacterSpriteTransform.transform.localPosition = new Vector3(0, .01f, 0);
+            m_CharacterSpriteTransform.transform.localPosition = new Vector3(0, -.03f, 0);
             AudioManager.Instance.PlayChangeState(2);
         }
     }
