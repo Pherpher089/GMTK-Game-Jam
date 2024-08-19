@@ -136,8 +136,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 251
-        height: 251
+        width: 303
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: Player_Move_Right_1
       rect:
         serializedVersion: 2
-        x: 251
+        x: 303
         y: 0
-        width: 251
-        height: 251
+        width: 303
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: Player_Move_Right_2
       rect:
         serializedVersion: 2
-        x: 502
+        x: 606
         y: 0
-        width: 251
-        height: 251
+        width: 303
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,6 +189,27 @@ TextureImporter:
       bones: []
       spriteID: 746a473fe2f2e2342997296ab3981678
       internalID: -1410431492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Move_Right_3
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 0
+        width: 303
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ce98a77870ded44abfcca098d5ed55
+      internalID: -1199363718
       vertices: []
       indices: 
       edges: []
@@ -204,6 +225,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Player_Move_Right_3: -1199363718
       Player_Move_Right_1: 444159466
       Player_Move_Right_0: 1352767216
       Player_Move_Right_2: -1410431492

@@ -136,8 +136,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 251
-        height: 251
+        width: 303
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: Player_Move_Left_1
       rect:
         serializedVersion: 2
-        x: 251
+        x: 303
         y: 0
-        width: 251
-        height: 251
+        width: 303
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: Player_Move_Left_2
       rect:
         serializedVersion: 2
-        x: 502
+        x: 606
         y: 0
-        width: 251
-        height: 251
+        width: 303
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,6 +189,27 @@ TextureImporter:
       bones: []
       spriteID: 81adf25c004a43147804195ab3dcc837
       internalID: 2079879528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Move_Left_3
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 0
+        width: 303
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62168e776d93d4a4cb24218dc9c8402c
+      internalID: -1601065592
       vertices: []
       indices: 
       edges: []
@@ -205,6 +226,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Player_Move_Left_0: -290466464
+      Player_Move_Left_3: -1601065592
       Player_Move_Left_1: 1359199980
       Player_Move_Left_2: 2079879528
   mipmapLimitGroupName: 
