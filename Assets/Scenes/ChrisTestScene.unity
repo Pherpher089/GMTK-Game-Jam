@@ -12169,22 +12169,22 @@ PrefabInstance:
     - target: {fileID: 1153774449534284435, guid: 82c0728e955d35b47892faee3769e42b,
         type: 3}
       propertyPath: m_SpeedModifier.Array.data[0]
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1153774449534284435, guid: 82c0728e955d35b47892faee3769e42b,
         type: 3}
       propertyPath: m_SpeedModifier.Array.data[1]
-      value: 1.5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1153774449534284435, guid: 82c0728e955d35b47892faee3769e42b,
         type: 3}
       propertyPath: m_SpeedModifier.Array.data[2]
-      value: 2
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1153774449534284435, guid: 82c0728e955d35b47892faee3769e42b,
         type: 3}
       propertyPath: m_SpeedModifier.Array.data[3]
-      value: 3
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1153774449534284438, guid: 82c0728e955d35b47892faee3769e42b,
         type: 3}
