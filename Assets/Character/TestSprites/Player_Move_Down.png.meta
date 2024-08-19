@@ -136,8 +136,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 251
-        height: 251
+        width: 303
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: Player_Move_Down_1
       rect:
         serializedVersion: 2
-        x: 251
+        x: 303
         y: 0
-        width: 251
-        height: 251
+        width: 303
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: Player_Move_Down_2
       rect:
         serializedVersion: 2
-        x: 502
+        x: 606
         y: 0
-        width: 251
-        height: 251
+        width: 303
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,6 +189,27 @@ TextureImporter:
       bones: []
       spriteID: bf0f50bc94e656f45b5130e3d0aac613
       internalID: 849813058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Move_Down_3
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 0
+        width: 303
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49ab3e7c701ec64882818142d1177b7
+      internalID: 271675268
       vertices: []
       indices: 
       edges: []
@@ -207,6 +228,7 @@ TextureImporter:
       Player_Move_Down_0: 441009046
       Player_Move_Down_2: 849813058
       Player_Move_Down_1: -1628754763
+      Player_Move_Down_3: 271675268
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

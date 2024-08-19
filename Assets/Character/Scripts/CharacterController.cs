@@ -4,7 +4,7 @@ public class CharacterController : MonoBehaviour
 {
     [HideInInspector] public static CharacterController Instance;
     [HideInInspector] public Animator m_Animator;
-    [Range(1, 10)] public float m_SpeedModifier = 1;
+    public float[] m_SpeedModifier;
 
     Rigidbody rb;
     void Awake()
@@ -47,6 +47,6 @@ public class CharacterController : MonoBehaviour
         m_Animator.SetFloat("Vertical", y);
 
 
-        rb.velocity = new Vector3(x, rb.velocity.y / m_SpeedModifier, y) * m_SpeedModifier;
+        rb.velocity = new Vector3(x, rb.velocity.y / m_SpeedModifier[GrowthManager.Instance.currentSate], y) * m_SpeedModifier[GrowthManager.Instance.currentSate];
     }
 }
