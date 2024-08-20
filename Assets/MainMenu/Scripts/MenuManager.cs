@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    public GameObject controlsPanel;
     public void Play()
     {
         SceneManager.LoadScene(1);
@@ -13,5 +14,14 @@ public class MenuManager : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void Controls()
+    {
+        controlsPanel.SetActive(true);
+    }
+    public void CloseControls()
+    {
+        controlsPanel.SetActive(false);
     }
 }
