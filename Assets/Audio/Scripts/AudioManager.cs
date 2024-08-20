@@ -73,7 +73,7 @@ public class AudioManager : MonoBehaviour
         {
             return;
         }
-        musicSource.volume = .3f;
+        musicSource.loop = true;
 
         musicSource.PlayOneShot(music[0]);
     }

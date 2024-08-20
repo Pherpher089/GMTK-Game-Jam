@@ -12151,40 +12151,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1153774449534284433, guid: 82c0728e955d35b47892faee3769e42b,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.04
-      objectReference: {fileID: 0}
     - target: {fileID: 1153774449534284434, guid: 82c0728e955d35b47892faee3769e42b,
         type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
-      objectReference: {fileID: 0}
-    - target: {fileID: 1153774449534284435, guid: 82c0728e955d35b47892faee3769e42b,
-        type: 3}
-      propertyPath: m_SpeedModifier.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1153774449534284435, guid: 82c0728e955d35b47892faee3769e42b,
-        type: 3}
-      propertyPath: m_SpeedModifier.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1153774449534284435, guid: 82c0728e955d35b47892faee3769e42b,
-        type: 3}
-      propertyPath: m_SpeedModifier.Array.data[1]
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1153774449534284435, guid: 82c0728e955d35b47892faee3769e42b,
-        type: 3}
-      propertyPath: m_SpeedModifier.Array.data[2]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1153774449534284435, guid: 82c0728e955d35b47892faee3769e42b,
-        type: 3}
-      propertyPath: m_SpeedModifier.Array.data[3]
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1153774449534284438, guid: 82c0728e955d35b47892faee3769e42b,
         type: 3}
